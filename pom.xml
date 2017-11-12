@@ -1,27 +1,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.programmerare.shortest-paths</groupId>
+	<artifactId>fork-of-edu.ufl.cise.bsmock.graph</artifactId>
 	
+	<version>0.0.1-SNAPSHOT</version>
+
 	<!--
-	Regarding the groupId and artifactId below:
+	Some comments about the above artifactId (and groupId ):
 	The current "home" of this project is this fork:
 	https://github.com/TomasJohansson/k-shortest-paths
-	That fork was created by Tomas Johansson ( groupId : com.programmerare )
+	That fork was created by Tomas Johansson ( domain owner of com.programmerare which is chosen as base for the groupId)
 	   
 	The forked project was found at this URL:
 	https://github.com/bsmock/k-shortest-paths
 	with package names beginning with this: 
 	edu.ufl.cise.bsmock.graph
 	
-	When the project was forked it did not have any maven file (this pom.xml you now are reading from)
-	and therefore I chose an artifactId as below, but if the forked project 
-	later will become submitted as a pull request into the original project
-	then these comments should be removed from the pom file and  
-	more appropriate groupId and artifacTd should be chosen.   
+	When the original project was forked, it did not have any Maven file (this pom.xml you now are reading from).
+	Pull request (about Maven) submitted to the original project:
+	https://github.com/bsmock/k-shortest-paths/pull/2
+	
+	Regarding the license, it is currently not clear.
+	Question about it: https://github.com/bsmock/k-shortest-paths/issues/3    
 	 -->
-	<groupId>com.programmerare</groupId>
-	<artifactId>fork-of-edu.ufl.cise.bsmock.graph</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,5 +38,25 @@
 		    <scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
+	<licenses>
+		<license>
+		<name>Unknown</name>
+		<distribution>repo</distribution>
+		<url>https://github.com/bsmock/k-shortest-paths</url>
+		<comments>Question about the license is asked to the original project: https://github.com/bsmock/k-shortest-paths/issues/3</comments>
+		</license>
+	</licenses>
+		
+	<build>
+		<resources>
+			<resource>
+				<directory>${project.basedir}</directory>			
+				<includes>
+					<include>License.txt</include>
+				</includes>
+			</resource>	
+		</resources>
+	</build>		
+		
 </project>

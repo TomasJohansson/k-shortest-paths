@@ -1,0 +1,6 @@
+This project is a fork of the following original project:
+https://github.com/bsmock/k-shortest-paths
+	
+Currently the license is unknown.
+Question about the license: 
+https://github.com/bsmock/k-shortest-paths/issues/3
