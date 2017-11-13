@@ -20,9 +20,6 @@
 	When the original project was forked, it did not have any Maven file (this pom.xml you now are reading from).
 	Pull request (about Maven) submitted to the original project:
 	https://github.com/bsmock/k-shortest-paths/pull/2
-	
-	Regarding the license, it is currently not clear.
-	Question about it: https://github.com/bsmock/k-shortest-paths/issues/3    
 	 -->
 
 	<properties>
@@ -41,11 +38,11 @@
 
 	<licenses>
 		<license>
-		<name>Unknown</name>
-		<distribution>repo</distribution>
-		<url>https://github.com/bsmock/k-shortest-paths</url>
-		<comments>Question about the license is asked to the original project: https://github.com/bsmock/k-shortest-paths/issues/3</comments>
-		</license>
+			<name>Apache License 2.0</name>
+			<distribution>repo</distribution>
+			<url>https://github.com/bsmock/k-shortest-paths/blob/master/LICENSE</url>
+			<comments>Note that the URL above is located at the repository for the original work. This fork is released under the same license.</comments>
+		</license>		
 	</licenses>
 		
 	<build>
@@ -55,7 +52,6 @@
 				<includes>
 					<include>License.txt</include>
 					<include>NOTICE.txt</include>
-					
 				</includes>
 			</resource>	
 		</resources>
